@@ -15,7 +15,7 @@ Features:
 ## About
 We needed a better way to parse application arguments across a variety of interfaces. It's simple enough if you build only a node api, but what if you want to expose a cli component as well? Now you have to worry about parsing argv options and trying to parse types from multiple formats. What if you wanted to expose configuration for the same options via env variables? It starts to become a complicated mess or parsing values and remembering order and precidence and types.
 
-This package aims to take care of all of that for you. Simply define your arguments in a declaritive way, wether you want env variables, argv variables, or local variables, and it will resolve all the options and return a single object. You can request specific types by providing classes or functions, you can set defaults, and you can specify required-ness and how to handle errors.
+This package aims to take care of all that for you. Simply define your arguments in a declaritive way, wether you want env variables, argv variables, or local variables, and it will resolve all the options and return a single object. You can request specific types by providing classes or functions, you can set defaults, and you can specify required-ness and how to handle errors.
 
 ## Usage
 Add args as a dependency for your app and install via npm
