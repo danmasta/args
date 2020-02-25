@@ -1,6 +1,6 @@
 {
   "name": "@danmasta/args",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Daniel Smith <dannmasta@gmail.com>",
   "description": "Arguments parser for node apps",
   "keywords": [
