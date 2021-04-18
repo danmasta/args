@@ -29,8 +29,8 @@ const args = require('@danmasta/args');
 ### Options
 name | type | description
 -----|------|------------
-`pos` | *`boolean`* | If `true` any positional arguments from argv will be added to output at `_`. Default is `true`
-`sub` | *`boolean`* | If `true` any sub-process arguments from argv will be added to output at `--`. Default is `true`
+`pos` | *`boolean`* | If true any positional arguments from argv will be added to output at `_`. Default is `true`
+`sub` | *`boolean`* | If true any sub-process arguments from argv will be added to output at `--`. Default is `true`
 `defaults` | *`object`* | Default option values to set for all arguments. Default is `null`
 
 ### Methods
@@ -48,19 +48,19 @@ name | type | description
 `alias` | *`string`* | Which alias key to use for argv arguments. Default is `undefined`
 `argv` | *`boolean`* | Whether or not to parse argument values from `process.argv`. Default is `true`
 `env` | *`boolean`* | Which env variable key to use for value lookup. Default is `undefined`
-`camel` | *`boolean`* | If `true` will also support `camelCase` keys for `id` in argv arguments. Default is `false`
-`snake` | *`boolean`* | If `true` will also support `snake_case` keys for `id` in argv arguments. Default is `false`
-`kebab` | *`boolean`* | If `true` will also support `kebab-case` keys for `id` in argv arguments. Default is `true`
+`camel` | *`boolean`* | If true will also support `camelCase` keys for `id` in argv arguments. Default is `false`
+`snake` | *`boolean`* | If true will also support `snake_case` keys for `id` in argv arguments. Default is `false`
+`kebab` | *`boolean`* | If true will also support `kebab-case` keys for `id` in argv arguments. Default is `true`
 `type` | *`constructor\|function`* | If set, after the value has been resolved it will attempt to coerce to `arg.type`. If a constructor it will use `new type(val)` otherwise just `type(val)`. Default is `undefined`
 `enum` | *`array\|any`* | If set, will attempt to validate against this value. Can be an array of possible values or a single value. Default is `undefined`.
-`required` | *`boolean`* | If `true` will create an error if value is `undefined`. Default is `false`
+`required` | *`boolean`* | If true will create an error if value is `undefined`. Default is `false`
 `value` | *`any`* | Value of the argument. Default is `undefined`
 `default` | *`any`* | Which value to use as the default for specified argument. Default is `undefined`
-`parseUndefined` | *`boolean`* | If `false` will ignore undefined values when attempting to parse to native and/or custom types. Default is `true`
-`warn` | *`boolean`* | If `true` will write errors to `stderr` for missing required fields and invalid enum values. Default is `false`
-`throw` | *`boolean`* | If `true` will throw errors on missing required fields and invalid enum values. Default is `false`
-`nativeType` | *`boolean`* | If `true` will attempt to coerce values to native types if possible. Default is `true`
-`nullable` | *`boolean`* | If `true` will allow `undefined` for required fields or enums. Default is `false`
+`parseUndefined` | *`boolean`* | If false will ignore undefined values when attempting to parse to native and/or custom types. Default is `true`
+`warn` | *`boolean`* | If true will write errors to `stderr` for missing required fields and invalid enum values. Default is `false`
+`throw` | *`boolean`* | If true will throw errors on missing required fields and invalid enum values. Default is `false`
+`nativeType` | *`boolean`* | If true will attempt to coerce values to native types if possible. Default is `true`
+`nullable` | *`boolean`* | If true will allow `undefined` for required fields or enums. Default is `false`
 
 ## Examples
 ```js
